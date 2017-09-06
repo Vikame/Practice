@@ -1,0 +1,198 @@
+stat-manager: mysql
+commands:
+  player-only: '&c%command% is a player-only command.'
+  console-only: '&c%command% is a console-only command.'
+  player-not-found: '&c%player% was not found.'
+  player-not-online: '&c%player% is no longer online.'
+  cannot-target-self: '&cYou cannot target yourself.'
+  no-permission: '&cYou do not have permission to use this command.'
+admin:
+  freeze:
+    freeze-bypass: '&c%player% cannot be frozen.'
+    in-match: '&cYou cannot freeze players whilst in a match.'
+    frozen-message: '&aYou have frozen &f%player%&a.'
+    unfrozen-message: '&aYou have un-frozen &f%player%.'
+    freeze-message: '&cYou are currently frozen, please join TeamSpeak @ ts.systic.org. Logging out during this time will result in a ban.'
+    unfreeze-message: '&aYou have been un-frozen.'
+    quit: '&4&l%player% has logged out while frozen.'
+    join: '&c&l%player% has logged in while frozen.'
+  staff:
+    in-match: '&cYou cannot enter staff mode whilst in a match.'
+    enable: '&6Staff mode has been &aenabled&6.'
+    disable: '&6Staff mode has been &cdisabled&6.'
+    random-teleport:
+      fail: '&cThere are no players to teleport to at this time.'
+  gamemode:
+    in-match: '&cYou cannot change your gamemode whilst in a match.'
+    not-found: '&c%gamemode% is not a recognized gamemode.'
+    same-gamemode: '&cYou are already in %gamemode% mode.'
+    switch: '&6You have set your gamemode to &f%gamemode%&6.'
+  fly:
+    in-match: '&cYou cannot fly whilst in a match.'
+    enable: '&6You have &aenabled &6flight.'
+    disable: '&6You have &cdisabled &6flight.'
+  teleport:
+    in-match: '&cYou cannot teleport out of a match.'
+    duel: '&6You have been teleported to a duel between &f%one% &6and &f%two%&6.'
+    team-duel: '&6You have been teleported to a team-duel between &f%one% &6and &f%two%&6.'
+    single: '&6You have been teleported to &f%player%&6.'
+  teleporthere:
+    in-match: '&cYou cannot teleport a player to you whilst they are in a match.'
+  show: '&6You are now able to see &f%player%&6.'
+  show-all: '&eYou are now able to see all online players.'
+  hide: '&6You are no longer able to see &f%player%&6.'
+  hide-all: '&eYou are no longer able to see any online players.'
+  set-spawn: '&aUpdated spawn position successfully.'
+  set-editor: '&aUpdated editor spawn position successfully.'
+  no-spawn: '&cNo spawn point has been set.'
+  spawn: '&6You have teleported to spawn.'
+  lock-ranked:
+    locked: '&cYou have locked ranked matches.'
+    locked-bc: '&c&lRanked matches have been locked.'
+    unlocked: '&aYou have un-locked ranked matches.'
+    unlocked-bc: '&a&lRanked matches have been un-locked.'
+  wand:
+    select: '&7Set %val% spawn-point.'
+    full-inventory: '&cYour inventory was full, the wand could not be added to your inventory.'
+    success: '&6Added an arena wand to your inventory.'
+  arena:
+    create:
+      invalid-selection: '&cYou must have a valid selection before creating a new arena.'
+      arena-exists: '&cAn arena named %arena% already exists.'
+      success: '&6Successfully created an arena named &f%arena%&6.'
+    delete:
+      arena-doesnt-exist: '&cAn arena named %arena% does not exist.'
+      success: '&6Successfully deleted arena &f%arena%&6.'
+    no-arenas: '&cThere are no arenas at this time.'
+help:
+  arena: '&7/%command% %subcommand%'
+  team: '&7/%command% %subcommand%'
+guis:
+  arena-list: '&bArena List'
+  unranked:
+    name: '&cUnranked Matchmaking'
+    item-names: '&e%name%'
+    item-lore:
+      - '&6Queued: &f%queued%'
+      - '&6In Match: &f%matches%'
+  ranked:
+    name: '&cRanked Matchmaking'
+    item-names: '&e%name%'
+    item-lore:
+      - '&6Queued: &f%queued%'
+      - '&6In Match: &f%matches%'
+  editor:
+    name: '&cKit Editor'
+    item-names: '&e%name%'
+  inventory-snapshot: "&b%player%'s Inventory"
+  leaderboard:
+    name: '&cLeaderboards'
+    item-names: '&6%name%: &f%elo%'
+  duel:
+    name: '&cDuel'
+    item-names: '&6%name%'
+  team:
+    name: '&cTeam list'
+    item-names: '&6%name%'
+    lore-format: '&7- &f%name%'
+  team-duel:
+    name: '&cTeam Duel'
+    item-names: '&6%name%'
+  staff:
+    name: '&cOnline Staff'
+    item-names: '&6%player%'
+  arena-select:
+    name: '&cArena Selection'
+    item-names: '&6%name%'
+items:
+  kit-editor: '&eKit Editor'
+  unranked: '&6Unranked'
+  ranked: '&cRanked'
+  ranked-locked: '&cRanked (Locked)'
+  leave-queue: '&cLeave queue'
+  inventory-snapshot:
+    health: '&cHealth: &f%health%'
+    food: '&6Food: &f%food%'
+    potions: '&ePotion Effects'
+  team-list: '&3View teams'
+  leave-spectator: '&cStop spectating'
+  view-inventory: '&bInventory Inspect'
+  compass: '&7Teleportation Compass'
+  random-teleport: '&6Random Teleport'
+queue:
+  leave: '&cYou have left the %ladder% queue.'
+  ranked-join: '&aYou have joined ranked matchmaking for &f%ladder%&a.'
+  unranked-join: '&aYou have joined unranked matchmaking for &f%ladder%&a.'
+match:
+  start: '&6Found match against &f%opposite%&6.'
+  start-ranked: '&6Found match against &f%opposite% &7[&e%elo%&7]'
+  win: '&f%winner% &6has won the match. &7(&c%health% hearts&7)'
+  team-win: '&f%team% &6has won the match.'
+  team-death: '&f%player% &6has died.'
+  ranked-end: '&aELO Change: &f%old_elo% &a-> &f%new_elo% &7(%change%&7)'
+  player-frozen: '&f%player% &6has been automatically killed due to a suspicion of him/her cheating.'
+  inventory-snapshot:
+    pre: '&6Click to view inventories: &f'
+    after: '%player%'
+editor: '&6You are now editing your &f%ladder% &6kit.'
+duel:
+  wait: '&cPlease wait until your current duel request to that player has timed out.'
+  send: '&6You have sent a duel request to &f%player% &6in the ladder &f%ladder%&6.'
+  receive: '&6You have received a duel request from &f%player% &6in the ladder &f%ladder%&6.'
+  receive-accept: '&a&l[Click to accept]'
+  not-found: '&cCould not find a duel request from %player%.'
+  timed-out: '&cYour duel request sent to %player% has timed out.'
+  in-match: '&cYou cannot accept other duel requests while you are in a match.'
+  other-in-match: '&c%player% is already in a match.'
+  spectating: '&cYou cannot accept duel requests while spectating.'
+  other-spectating: '&c%player% is currently spectating a player and cannot be dueled.'
+  frozen: '&cYou cannot duel other players while you are frozen.'
+  other-frozen: '&c%player% is currently frozen and cannot receive duel requests.'
+  disabled-requests: '&c%player% is not accepting duel requests at this time.'
+generic:
+  pearl-prematch: '&cYou cannot use enderpearls before the match has begun.'
+  pearl-cooldown: '&cYou cannot use enderpearls for another &4%time%s&c.'
+  not-loaded: '&cNOTE: &6Your statistics have not loaded yet, all changes to your statistics will not be saved.'
+  no-snapshot: '&cEither the requested inventory does not exist or has expired.'
+  ranked-locked: '&cRanked matches are currently locked and may not be participated in.'
+  insufficient-unranked: '&cYou must win %amount% more unranked matches before participating in ranked matches.'
+  draw: '&6Your match has ended in a draw due to %reason%.'
+  ping-self: '&6Your ping: &f%ping%'
+  ping-other: "&6%player%'s ping: &f%ping%"
+team:
+  in-match: '&cYou cannot run team commands whilst in a match.'
+  create: '&cYou have created a team.'
+  cannot-target-friendly: '&cYou cannot target one of your team members.'
+  cannot-duel-team: '&cYou cannot duel your own team.'
+  already-in-team: '&cYou cannot create a new team while you are the member of one.'
+  not-in-team: '&cYou must be in a team to do this.'
+  not-owner: '&cYou must be the owner of the team to do this.'
+  invite: "&7You have been invited to join &f%player%'s Team&7. Click here to join."
+  invited: '&7%player% has been invited to join your team.'
+  already-on-team: '&c%player% is already on a team.'
+  player-not-invited: '&c%player% is not invited to your team.'
+  deinvited: "&7%player%'s invitation to join your team has been revoked."
+  disband: '&cYour team has been disbanded.'
+  join: '&6You have joined &f%team%&6.'
+  player-joined: '&7%player% has joined your team.'
+  does-not-exist: '&cThat team no longer exists.'
+  no-owner-online: '&cThe owner of that team is not online.'
+  duel:
+    wait: '&cPlease wait until your current duel request to that player has timed out.'
+    send: '&6Your team has sent a duel request to &f%team% &6in the ladder &f%ladder%&6.'
+    receive: '&6You have received a duel request from the team &f%team% &6in the ladder &f%ladder%&6.'
+    receive-accept: '&a&l[Click to accept]'
+    not-found: '&cCould not find a duel request from %team%.'
+    in-match: '&cYou cannot accept other duel requests while your team is in a match.'
+    other-in-match: '&c%team% is already in a match.'
+scoreboard:
+  name: '&6Practice'
+  enable: '&6You have &aenabled &6your scoreboard.'
+  disable: '&6You have &cdisabled &6your scoreboard.'
+spectate:
+  in-match: '&cYou cannot spectate another player while in a match.'
+  duel: '&6You are now spectating a duel between &f%one% &6and &f%two%&6.'
+  team-duel: '&6You are now spectating a team-duel between &f%one% &6and &f%two%&6.'
+  no-match: '&c%player% is not currently in a match.'
+  stop-spectating: '&6You have left spectator mode.'
+  frozen: '&cYou cannot spectate other players while you are frozen.'

@@ -1,0 +1,11 @@
+uuid:
+  No Debuff:
+    0:
+      items:
+        0: item
+        1: item
+      armor:
+        3: helmet
+        2: chestplate
+        1: leggings
+        0: boots

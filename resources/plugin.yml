@@ -1,0 +1,46 @@
+name: Practice
+version: 1.0.0
+author: ThreadSafe
+main: org.systic.practice.Practice
+depend: [Citadel, ProtocolLib]
+softdepend: [Skynet]
+commands:
+  arena:
+  setspawn:
+    aliases: [psetspawn]
+  seteditor:
+  _:
+  lockranked:
+  teleport:
+    aliases: [tp]
+  hide:
+  show:
+  leaderboard:
+    aliases: [leaderboards]
+  team:
+    aliases: [t]
+  duel:
+    aliases: [1v1, 1vs1]
+  accept:
+  scoreboard:
+    aliases: [sb, hud]
+  profile:
+  fly:
+    aliases: [pfly]
+  gamemode:
+    aliases: [gmc, gms, gma]
+  freeze:
+    aliases: [ss]
+  spectate:
+    aliases: [spec]
+  ping:
+    aliases: [ms]
+  spawn:
+    aliases: [pspawn]
+  staff:
+    aliases: [mod, h]
+  setidrainq:
+  toggleduels:
+    aliases: [toggleduel, td, tduels]
+  toggleplayers:
+    aliases: [tplayers, tpl]
